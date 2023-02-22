@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Primera PreEntrega | Simualador IMC</title>
+    <link rel="stylesheet" href="./styleImc.css">
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <h1>Calculadora de índice de masa corporal</h1>
+            <div class="display">
+                <p id="result">20.0</p>
+                <p id="category">Peso normal</p>
+            </div>
+            <div class="row">
+                <input type="range" min="20" max="200" value="20" id="peso" oninput="calculate()">
+                <span id="valorPeso">20 kg</span>
+            </div>
+            <div class="row">
+                <input type="range" min="10" max="250" value="100" id="altura" oninput="calculate()">
+                <span id="valorAltura">120 cm</span>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="./imcSimulator.js"></script>
+</body>
+
+</html>
